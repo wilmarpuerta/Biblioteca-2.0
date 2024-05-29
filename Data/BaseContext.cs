@@ -1,6 +1,6 @@
 
-
 using Microsoft.EntityFrameworkCore;
+using Biblioteca_2._0.Models;
 
 namespace Biblioteca_2._0.Data
 {
@@ -8,7 +8,11 @@ namespace Biblioteca_2._0.Data
     {
         public BaseContext(DbContextOptions<BaseContext> options) : base(options)
         {
-            
+
         }
+        
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Editorial> Editorials { get; set; }
     }
 }
