@@ -1,7 +1,7 @@
 -- Creación de las tablas
 
-CREATE Table books(
-    Id INTEGER PRIMARY KEY,
+CREATE Table Books(
+    Id INTEGER PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(225),
     Pages INTEGER(10),
     Language VARCHAR(125),
@@ -9,16 +9,16 @@ CREATE Table books(
     Description TEXT
 );
 
-CREATE Table authors(
-    Id int PRIMARY KEY,
+CREATE Table Authors(
+    Id int PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(125),
     LastName VARCHAR(45),
     Email VARCHAR(125),
     Nationality VARCHAR(125)
 );
 
-CREATE Table editorials(
-    Id INTEGER PRIMARY KEY,
+CREATE Table Editorials(
+    Id INTEGER PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(125),
     Address VARCHAR(125),
     Phone VARCHAR(35),
